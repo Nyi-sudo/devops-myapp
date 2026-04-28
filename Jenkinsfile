@@ -1,5 +1,9 @@
 pipeline {
     agent any
+	
+    tools {
+	git 'Default'
+    }
 
     environment {
         DOCKER_IMAGE = "nyinyi1166/myapp"
